@@ -1,27 +1,20 @@
 import React from 'react';
-import { Container, Typography, Button } from '@mui/material';
-import Typewriter from 'typewriter-effect';
 
-const Home = () => {
+function Home() {
   return (
-    <Container>
-      <Typography variant="h2" gutterBottom>
-        Welcome to My Portfolio
-      </Typography>
-      <Typography variant="h4" color="textSecondary" paragraph>
-        <Typewriter
-          options={{
-            strings: ['Web Developer', 'React Expert', 'UI/UX Designer'],
-            autoStart: true,
-            loop: true,
-          }}
-        />
-      </Typography>
-      <Button variant="contained" color="primary" href="/portfolio">
-        Check My Work
-      </Button>
-    </Container>
+    <main className="text-center py-20 bg-black text-white min-h-screen">
+      <h1 className="text-5xl font-extrabold mb-6 text-white" >Welcome to My Portfolio</h1>
+      <p className="text-lg mb-8 text-gray-300">
+        A showcase of creativity, skills, and professional work.
+      </p>
+      <a
+        href="/portfolio"
+        className="bg-orange-500 text-white px-6 py-3 rounded-full font-bold shadow-md hover:bg-orange-600 transition"
+      >
+        Explore My Work
+      </a>
+    </main>
   );
-};
+}
 
 export default Home;

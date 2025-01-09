@@ -1,27 +1,21 @@
 import React from 'react';
-import { Card, CardContent, CardMedia, Typography, Button } from '@mui/material';
 
 const PortfolioItem = ({ title, description, image, link }) => {
   return (
-    <Card sx={{ maxWidth: 345, margin: '20px' }}>
-      <CardMedia
-        component="img"
-        height="140"
-        image={image}
-        alt={title}
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          {title}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {description}
-        </Typography>
-      </CardContent>
-      <Button href={link} target="_blank" color="primary" sx={{ margin: '10px' }}>
+    <div className="p-4">
+      {/* تصویر پروژه */}
+      <img src={image} alt={title} className="w-full h-48 object-cover rounded-lg" />
+      <h2 className="text-xl font-semibold mt-4">{title}</h2>
+      <p className="text-white mt-2">{description}</p>
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-orange-500 hover:underline mt-4 inline-block"
+      >
         View Project
-      </Button>
-    </Card>
+      </a>
+    </div>
   );
 };
 

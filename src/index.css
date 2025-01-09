@@ -1,4 +1,7 @@
 /* index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #f4f4f4;
@@ -16,4 +19,19 @@ h1, h2, h3, h4 {
 
 button {
   margin-top: 20px;
+}
+header {
+  background-color: #007bff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+nav a:hover {
+  color: #ffeb3b;
 }
