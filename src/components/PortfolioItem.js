@@ -1,10 +1,12 @@
-import React from 'react';
-
 const PortfolioItem = ({ title, description, image, link }) => {
   return (
     <div className="p-4">
       {/* تصویر پروژه */}
-      <img src={image} alt={title} className="w-full h-48 object-cover rounded-lg" />
+      <img
+        src={image}
+        alt={title}
+        className="w-full h-48 object-cover rounded-lg transition-transform duration-300 hover:scale-105" 
+      />
       <h2 className="text-xl font-semibold mt-4">{title}</h2>
       <p className="text-white mt-2">{description}</p>
       <a
