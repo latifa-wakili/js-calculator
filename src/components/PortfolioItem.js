@@ -7,7 +7,7 @@ const PortfolioItem = ({ title, description, image, link }) => {
         alt={title}
         className="w-full h-48 object-cover rounded-lg transition-transform duration-300 hover:scale-105" 
       />
-      <h2 className="text-xl font-semibold mt-4">{title}</h2>
+      <h2 className="text-xl text-white font-semibold mt-4">{title}</h2>
       <p className="text-white mt-2">{description}</p>
       <a
         href={link}

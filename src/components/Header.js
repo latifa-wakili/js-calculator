@@ -11,7 +11,7 @@ function Header() {
   return (
     <header className="bg-black text-white p-4 shadow-md">
       <nav className="flex justify-between items-center container mx-auto">
-        <h1 className="text-xl font-bold">My Portfolio</h1>
+        <h1 className="text-xl font-bold text-orange-500">My Portfolio</h1>
         
         {/* منوی دسکتاپ */}
         <div className="space-x-4 hidden md:flex">
