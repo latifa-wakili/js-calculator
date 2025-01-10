@@ -10,7 +10,7 @@ function About() {
           I am a passionate developer focused on creating impactful solutions.
         </p>
         <img
-          src="Wakili"
+          src="/assets/Wakili-pic.jpg"
           alt="My Avatar"
           className="rounded-full mx-auto mb-6 border-4 border-orange-500 shadow-lg"
         />
