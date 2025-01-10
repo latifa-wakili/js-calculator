@@ -17,9 +17,9 @@ const projects = [
   },
   {
     title: 'Project 3',
-    description: 'E-commerce platform with React, Redux, and Firebase.',
-    image: 'https://via.placeholder.com/300x200',
-    link: 'https://link_to_project3.com',
+    description: 'Cash-Register with HTML, CSS, and JavaScript.',
+    image: '/assets/cashRagister.png',
+    link: 'https://latifa-wakili.github.io/-Cash-Register/',
   },
 ];
 
