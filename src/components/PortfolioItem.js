@@ -1,7 +1,6 @@
 const PortfolioItem = ({ title, description, image, link }) => {
   return (
     <div className="p-4">
-      {/* تصویر پروژه */}
       <img
         src={image}
         alt={title}
