@@ -6,8 +6,8 @@ const projects = [
   {
     title: 'Project 1',
     description: 'A responsive website built with React and Tailwind CSS.',
-    image: '/assets/country-code.png',
-    link: 'https://link_to_project1.com',
+    image: '/assets/Portfolio-page.png',
+    link: 'https://portfolio-page-jzuba5j4c-latifa-wakilis-projects.vercel.app/',
   },
   {
     title: 'Project 2',
@@ -21,10 +21,27 @@ const projects = [
     image: '/assets/cashRagister.png',
     link: 'https://latifa-wakili.github.io/-Cash-Register/',
   },
+  {
+    title: 'Project 3',
+    description: 'library-managment with React and tailwindcss.',
+    image: '/assets/library.png',
+    link: 'https://library-rgo73t345-latifa-wakilis-projects.vercel.app/',
+  },
+  {
+    title: 'Project 3',
+    description: 'Product-card with HTML and CSS.',
+    image: '/assets/previewCard.jpg',
+    link: 'https://latifa-wakili.github.io/Product-card/',
+  },
+  {
+    title: 'Project 3',
+    description: 'SocialLink-card with HTML and CSS.',
+    image: '/assets/social-card.png',
+    link: 'https://latifa-wakili.github.io/Wakili-Social-links/',
+  },
 ];
 
-Modal.setAppElement('#root'); // برای جلوگیری از ارورهای دسترسی
-
+Modal.setAppElement('#root');
 const Portfolio = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentProject, setCurrentProject] = useState(null);
@@ -41,34 +58,32 @@ const Portfolio = () => {
 
   const goToNextProject = () => {
     const currentIndex = projects.indexOf(currentProject);
-    const nextIndex = (currentIndex + 1) % projects.length; // رفتن به پروژه بعدی
+    const nextIndex = (currentIndex + 1) % projects.length; 
     setCurrentProject(projects[nextIndex]);
   };
 
   const goToPreviousProject = () => {
     const currentIndex = projects.indexOf(currentProject);
-    const prevIndex = (currentIndex - 1 + projects.length) % projects.length; // رفتن به پروژه قبلی
+    const prevIndex = (currentIndex - 1 + projects.length) % projects.length;
     setCurrentProject(projects[prevIndex]);
   };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white py-8 px-4">
       <div className="container mx-auto">
-        <h2 className="text-center text-4xl font-bold text-orange-500 mb-12">My Portfolio</h2>
+        <h2 className="text-center text-4xl font-bold text-orange-500 mb-12">My Projects</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <div
               className="bg-gray-800 rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-lg transition-shadow duration-300"
               key={index}
-              onClick={() => openModal(project)} // کلیک برای باز کردن مودال
+              onClick={() => openModal(project)} 
             >
               <PortfolioItem {...project} />
             </div>
           ))}
         </div>
       </div>
-
-      {/* Modal */}
       {currentProject && (
         <Modal
           isOpen={isModalOpen}
