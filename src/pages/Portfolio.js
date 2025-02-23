@@ -22,19 +22,19 @@ const projects = [
     link: 'https://latifa-wakili.github.io/-Cash-Register/',
   },
   {
-    title: 'Project 3',
+    title: 'Project 4',
     description: 'library-managment with React and tailwindcss.',
     image: '/assets/library.png',
     link: 'https://library-rgo73t345-latifa-wakilis-projects.vercel.app/',
   },
   {
-    title: 'Project 3',
+    title: 'Project 5',
     description: 'Product-card with HTML and CSS.',
     image: '/assets/previewCard.jpg',
     link: 'https://latifa-wakili.github.io/Product-card/',
   },
   {
-    title: 'Project 3',
+    title: 'Project 6',
     description: 'SocialLink-card with HTML and CSS.',
     image: '/assets/social-card.png',
     link: 'https://latifa-wakili.github.io/Wakili-Social-links/',
